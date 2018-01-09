@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction:column;
+
+}
+main{
+    flex:1 0 auto;
+}
+h1{
+    color:rgb(158, 40, 40);
+}
+.nav-wrapper .fa-bars{
+    font-size: 30px;
+}
+footer{
+    margin-top: 20px;
+}
+
+/*add button tooltip*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right: 100%;
+    top: -5px;
+
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.s3{
+    margin-right: 10px;
+}
+
+/*add button tooltip ends*/
+

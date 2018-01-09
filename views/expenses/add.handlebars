@@ -1,1 +1,41 @@
-<h1>Add my expenses</h1>
+<h1>Add Your Expenses</h1>
+<div class="row">
+    <form action="/expenses" method="post" class="col s12">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" class="datepicker" name="title">
+                <label for="date">Date</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <select name="shop-from">
+                    <option value="market">Market Basket</option>
+                    <option value="himalayan">Himalayan</option>
+                    <option value="namaste">Namaste</option>
+                    <option value="namaste">Comcast</option>
+                    <option value="other">Eversource</option>
+                </select>
+                <label for="from">Shopped From</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input type="number" name="amount">
+                <label for="title">Amount</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <input type="text" name="detail">
+                <label for="title">Item Detail</label>
+            </div>
+        </div>
+        
+        <input type="submit" value="Submit" class="btn row">
+        
+
+
+    </form>
+</div>

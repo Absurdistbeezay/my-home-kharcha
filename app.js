@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
@@ -61,7 +62,8 @@ app.use('/', index);
 app.use('/auth', auth);
 app.use('/expenses', expenses);
 
-
+//Set static folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 const port = process.env.PORT || 3000;
 
